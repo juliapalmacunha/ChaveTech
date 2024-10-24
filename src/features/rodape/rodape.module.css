@@ -1,0 +1,19 @@
+.rodape {
+    background-color: #001E27;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+
+.rodape h2 {
+    color: white;
+    font-family: 'Lato';
+    font-weight: bold;
+}
+
+

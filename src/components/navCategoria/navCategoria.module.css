@@ -1,0 +1,17 @@
+.nomesCategorias {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 5px 30px 5px;
+}
+
+.nomesCategorias div {
+    font-family: "Lato";
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #043b71;
+    color: white;
+
+}

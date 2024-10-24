@@ -1,0 +1,19 @@
+.caixa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+@media (max-width: 1310px) {
+    .categoria > * {
+        flex: 1 0 calc(50% - 10px); /* 2 colunas quando a largura for <= 1310px */
+    }
+}
+
+/* Media query para largura máxima de 800px */
+@media (max-width: 800px) {
+    .categoria > * {
+        flex: 1 0 100%; /* 1 coluna em telas muito pequenas */
+    }
+}
