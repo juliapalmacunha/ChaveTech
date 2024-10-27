@@ -1,14 +1,30 @@
 import React from 'react'
-import style from './rodape.module.css'
+import { Box , Typography} from '@mui/material'
 
 const Rodape = () => {
   return (
     
-    <footer className={style.rodape} >
-
-      <h2>Ver pedido</h2>
-
-    </footer>
+    <Box  
+    sx={{
+      backgroundColor: "#001E27",
+      width: '100%',
+      height:"70px",
+      color: 'white',
+      display:"flex",
+      textAlign: 'center',
+    }}
+    >
+     <Typography
+      variant='h2'
+      fontSize="20px"
+      sx={{
+        margin:"auto",
+        fontFamily:"Lato",
+        fontWeight:"bold"
+      }}>
+        Ver pedido
+      </Typography>
+    </Box>
   )
 }
 

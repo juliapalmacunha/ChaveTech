@@ -1,15 +1,82 @@
 import React from 'react'
-import style from './cadastro.module.css'
+import { Box, TextField, Button } from '@mui/material';
 
 const CadastroProduto = () => {
   return (
-    <div className={style.caixaForm} >
+    < >
 
-      <div className={style.form} >
 
-      </div>
+      <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        minHeight="100vh"
+        bgcolor="#FFFFF"
+        p={2}
+        flexDirection="column"
+      >
+        <Box
+          name='box'
+          component="form"
+          width="100%"
+          maxWidth="800px"
+          marginBottom="150px"
+          p={3}
+          bgcolor="white"
+          boxShadow={3}
+          borderRadius={4}
+          zIndex="1"
+          display="flex"
+          flexDirection="row"
+          gap={2}
+        >
+          <Box width="50%" display="flex" flexDirection="column" gap={2}>
+            <TextField
+              label="Nome"
+              name="name"
+              variant="outlined"
+              fullWidth
+              size='small'
 
-    </div>
+            />
+            <TextField
+              label="Telefone"
+              name="telefone"
+              variant="outlined"
+              fullWidth
+              size='small'
+             
+
+            />
+            <TextField
+              label="Cidade"
+              name="cidade"
+              variant="outlined"
+              fullWidth
+              size='small'
+              
+            />
+            
+
+            <Button
+              variant="contained"
+              sx={{ backgroundColor: "#043b71" , mt: 2, fontFamily: 'Be Vietnam Pro, sans-serif', textDecoration: 'none' }}
+              type="submit"
+            >
+              Enviar
+            </Button>
+            
+          </Box>
+        
+        </Box>
+
+      </Box>
+
+
+
+
+
+    </>
   )
 }
 

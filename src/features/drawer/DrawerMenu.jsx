@@ -42,11 +42,11 @@ const DrawerMenu = ({alternarGaveta, estadoGaveta}) => {
               <ListItemText primary="Cadastrar" />
             </ListItemButton>
 
-            <ListItemButton onClick={alternarGaveta} >
+            <ListItemButton onClick={alternarGaveta} component={Link} to='clientes'>
               <ListItemIcon>
                 <HowToRegIcon />
               </ListItemIcon>
-              <ListItemText primary="Clientes" component={Link} to='clientes' />
+              <ListItemText primary="Clientes"  />
             </ListItemButton>
 
             <ListItemButton onClick={alternarGaveta} component={Link} to='pedidos'>

@@ -1,16 +1,20 @@
 import React from 'react'
-import style from './caixaCategoria.module.css'
+import { Box } from '@mui/material'
 
-const CaixaCategoria = ({children}) => {
+const CaixaCategoria = ({ children }) => {
 
-
+ 
 
   return (
 
-    <section className={style.caixa} >
-        {children}
-    </section>
-    
+    <Box sx={{
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center"
+    }}>
+      {children}
+    </Box>
+
   )
 }
 

@@ -1,26 +1,50 @@
-    import React from 'react'
-    import style from './produto.module.css'
-    import AddCircleIcon from '@mui/icons-material/AddCircle';
-    
+import React from 'react'
+import style from './produto.module.css'
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+import { Box, Grid2 } from '@mui/material';
 
-    const Produto = (props) => {
-        return (
 
-            <article className={style.produto} >
+const Produto = (props) => {
+    return (
 
-                <div>
-                    <img src={props.img} alt={props.time} />
-                </div>
-                <div className={style.descricao} >
+        <Grid2
+            xs={12} sm={4}
+            className={style.produto}
+            sx={{
+                margin: '32px 16px',
+                width: '280px',
+                height: '320px',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent:'center',
+                borderRadius: '20px',
+                backgroundColor: 'white',
+            }}
+        >
+
+            <Box>
+
+                <Box>
+                    <img
+                        src={props.img}
+                        alt={props.time}
+                        sx={{
+                            paddingTop: "12px"
+                        }} />
+                </Box>
+                <Box className={style.descricao} >
                     <div>
                         <h4>{props.time}</h4>
-                        <AddCircleIcon sx={{ fontSize: 34 }}/>
+                        <AddCircleIcon sx={{ fontSize: 34 }} />
                     </div>
                     <p>tem xx desse produto no estoque</p>
-                </div>
+                </Box>
 
-            </article>
-        )
-    }
+            </Box>
 
-    export default Produto
+        </Grid2 >
+    )
+}
+
+export default Produto

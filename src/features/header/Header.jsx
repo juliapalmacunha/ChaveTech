@@ -1,17 +1,17 @@
- // Adicione useState aqui
-import style from './header.module.css';
+
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu'; 
+import { Box } from '@mui/material';
 
 const Header = ({alternarGaveta}) => {
   
   return (
-    <header className={style.header}>
+    <Box>
       <AppBar position="static">
-        <Toolbar className={style.cabecalho}>
+        <Toolbar sx={{backgroundColor:"#043b71"}}>
           <IconButton
             size="large"
             edge="start"
@@ -29,7 +29,7 @@ const Header = ({alternarGaveta}) => {
         </Toolbar>
 
       </AppBar>
-    </header>
+    </Box>
   );
 };
 

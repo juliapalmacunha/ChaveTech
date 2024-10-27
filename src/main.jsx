@@ -6,8 +6,9 @@ import {createBrowserRouter, RouterProvider } from 'react-router-dom'
 import CadastroProduto from './pages/cadastro/CadastroProduto.jsx'
 import Categorias from './pages/categorias/Categorias.jsx'
 import Clientes from './pages/clientes/Clientes.jsx'
-import { Dashboard } from '@mui/icons-material'
+import Dashboard from './pages/dashboard/Dashboard.jsx'
 import Pedidos from './pages/pedidos/Pedidos.jsx'
+import Times from './pages/categorias/Times.jsx'
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,14 @@ const router = createBrowserRouter([
       },
       {
         path: 'categorias',
-        element: <Categorias/>
+        element: <Categorias/>,
+        children: [
+          {
+            path: "times",
+            element: <Times/>
+          }
+
+        ]
       },
       {
         path: 'clientes',
@@ -33,7 +41,7 @@ const router = createBrowserRouter([
       {
         path: 'pedidos',
         element: <Pedidos/>
-      },
+      }
     ]
   }
 ])
