@@ -1,7 +1,11 @@
 import React from 'react'
 import { Box, TextField, Button } from '@mui/material';
+import { useParams } from 'react-router-dom';
 
 const CadastroProduto = () => {
+
+ 
+
   return (
     < >
 

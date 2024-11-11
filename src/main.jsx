@@ -10,6 +10,7 @@ import Dashboard from './pages/dashboard/Dashboard.jsx'
 import Pedidos from './pages/pedidos/Pedidos.jsx'
 import Times from './pages/categorias/Times.jsx'
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -27,7 +28,6 @@ const router = createBrowserRouter([
             path: "times",
             element: <Times/>
           }
-
         ]
       },
       {

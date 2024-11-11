@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box , Typography} from '@mui/material'
 
-const Rodape = () => {
+const Rodape = ({children}) => {
   return (
     
     <Box  
@@ -22,7 +22,7 @@ const Rodape = () => {
         fontFamily:"Lato",
         fontWeight:"bold"
       }}>
-        Ver pedido
+        {children}
       </Typography>
     </Box>
   )
